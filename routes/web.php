@@ -7,7 +7,7 @@ use App\Http\Controllers\RombelsController;
 use App\Http\Controllers\RayonController;
 use App\Http\Controllers\AkunController;
 use App\Http\Controllers\SiswaController;
-use App\Http\Controllers\KeterlambatanController;
+use App\Http\Controllers\LatesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,8 +75,16 @@ Route::group(['middleware' => 'auth'], function () {
         Route::delete('/{id}', [AkunController::class, 'destroy'])->name('destroy');
     });    
     
+    Route::prefix('/lates')->name('lates.')->group(function(){
+        Route::get('/index', [LatesController::class, 'index'])->name('index');
+        Route::get('/create', [LatesController::class, 'create'])->name('create');
+        Route::post('/store', [LatesController::class, 'store'])->name('store');
+        Route::get('/{id}/edit', [LatesController::class, 'edit'])->name('edit');
+        Route::patch('/{id}', [LatesController::class, 'update'])->name('update');
+        Route::delete('/{id}', [LatesController::class, 'destroy'])->name('delete');
+        Route::get('/{id}/detail', [LatesController::class, 'detail'])->name('detail');
+    });
 });
-
 
 // Route::get('/', [HomeController::class, 'index'])->name('siswa.index');
 

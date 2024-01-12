@@ -79,6 +79,7 @@
                         <li class="icons dropdown">
                             <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
                                 <span class="activity active"></span>
+                                <img src="images/user/1.png" height="40" width="40" alt="">
 
                             </div>
                             <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
@@ -128,7 +129,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" aria-expanded="false">
+                        <a href="{{ route('lates.index') }}" aria-expanded="false">
                             <i class="icon-notebook menu-icon"></i><span class="nav-text">Data Keterlambatan</span>
                         </a>
                     </li>

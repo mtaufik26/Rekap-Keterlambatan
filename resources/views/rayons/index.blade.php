@@ -46,9 +46,9 @@
                                                 <i class="fa fa-edit"></i>
                                                 <a href="{{ route('rayon.edit', $rayon->id) }}">Edit</a>
                                             </button>
-                                            <button  class="btn btn-primary btn-danger" data-toggle="modal" >
+                                            <button  class="btn btn-primary btn-danger" data-toggle="modal"  href="#modalHapus{{ $rayon->id }}">
                                                 <i class="fa fa-trash"></i>
-                                                <a href="#modalHapus{{ $rayon->id }}">Hapus</a>
+                                                <a>Hapus</a>
                                             </button>
                                         </td>
                                     </tr>

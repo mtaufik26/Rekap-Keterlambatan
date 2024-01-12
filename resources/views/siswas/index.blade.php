@@ -51,9 +51,9 @@
                                                 <i class="fa fa-edit"></i>
                                                 <a href="{{ route('siswa.edit', ['id' => $siswa->id]) }}">Edit</a>
                                             </button>
-                                            <button  class="btn btn-primary btn-danger" data-toggle="modal" >
+                                            <button  class="btn btn-primary btn-danger" data-toggle="modal"  href="#modalHapus{{ $siswa->id }}">
                                                 <i class="fa fa-trash"></i>
-                                                <a href="#modalHapus{{ $siswa->id }}">Hapus</a>
+                                                <a>Hapus</a>
                                             </button>
                                         </tr>
                                     @endforeach

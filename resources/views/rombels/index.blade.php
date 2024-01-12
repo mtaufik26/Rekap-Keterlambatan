@@ -40,13 +40,13 @@
                                         <td>{{ $no++ }}</td>
                                         <td>{{ $rombel->rombel }}</td>
                                         <td>
-                                            <button  class="btn btn-primary btn-round ml-auto" data-toggle="modal" >
+                                            <button  class="btn btn-primary btn-round ml-auto" data-toggle="modal" data-target="#modalEdit{{ $rombel->id }}">
                                                 <i class="fa fa-edit"></i>
-                                                <a href="#modalEdit{{ $rombel->id }}">Edit</a>
+                                                <a >Edit</a>
                                             </button>
-                                            <button  class="btn btn-primary btn-danger" data-toggle="modal" >
+                                            <button  class="btn btn-primary btn-danger" data-toggle="modal"  data-target="#modalHapus{{ $rombel->id }}">
                                                 <i class="fa fa-trash"></i>
-                                                <a href="#modalHapus{{ $rombel->id }}"></a>Hapus
+                                                <a>Hapus</a>
                                             </button>
                                         </td>
                                     </tr>
